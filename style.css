@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	justify-content: center;
+  	font-family: "Nerko One", cursive;
+  	font-weight: bold;
+}
+
+body{
+	background-color: black;
+}
+
+.header-container{
+	display: flex;
+	align-items: center;
+	background-color: red;
+	margin-bottom: 10px;
+}
+
+.header-text-name{
+	font-size: 40px;
+	color: white;
+}
+
+.header-text-left{
+	margin-left: 10%;
+}
+
+.per-button-cover-header{
+	background-color: white;
+	margin-left: 10px;
+	padding: 2px 8px;
+	align-items: center;
+	border-radius: 10px;
+	border: 2px solid red;
+}
+
+.per-button-cover-header a{
+	text-decoration: none;
+}
+
+.per-cs-container{
+	display: flex;
+	align-items: center;
+}
+
+.cs-img-logo{
+	width: 30px;
+	margin-right: 3px;
+}
+
+.header-cs1-cover{
+	display: flex;
+	align-items: center;
+	background-color: red;
+}
+
+.cs-text2{
+	color: white;
+	font-size: 18px;
+}
+
+.cs-text{
+	color: black;
+	font-size: 18px;
+}
+
+.button-pro-menu{
+	margin-top: 10px;
+	background-color: white;
+	color: black;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.active{
+	background-color: red;
+	color: white;
+}
+
+#products{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-column-gap: 10px;
+	padding: 10px;
+}
+
+.card{
+	background-color: red;
+	max-width: 300px;
+	margin-top: 15px;
+	padding: 2px;
+	overflow: hidden;
+	border-radius: 10px;
+	font-size: 20px;
+	color: white;
+}
+
+.image-container{
+	text-align: center;
+	align-content: center;
+}
+
+
+img{
+	max-width: 100%;
+	object-fit: contain;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.hide{
+	display: none;
+}
