@@ -87,7 +87,7 @@ function filterProduct(value){
 
     let elements = document.querySelectorAll(".card");
     elements.forEach((element) => {
-        if(value == "test1"){
+        if(value == "全部"){
             element.classList.remove("hide");
         }
         else{
@@ -103,5 +103,5 @@ function filterProduct(value){
 
 
 window.onload = () => {
-    filterProduct("test1");
+    filterProduct("全部");
 };
