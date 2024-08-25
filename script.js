@@ -3,37 +3,37 @@ let products = {
 
     {
         productName: "M0006",
-        category: "Latest",
+        category: "自拍",
         image: "1.jpg",
     },
 
     {
         productName: "M0005",
-        category: "Slot",
+        category: "自慰",
         image: "2.jpg",
     },
 
     {
         productName: "M0004",
-        category: "Casino",
+        category: "口交",
         image: "3.jpg",
     },
 
     {
         productName: "M0003",
-        category: "Fish",
+        category: "口交",
         image: "4.jpg",
     },
 
     {
         productName: "M0002",
-        category: "Fish",
+        category: "口交",
         image: "5.jpg",
     },
 
     {
         productName: "M0001",
-        category: "Latest",
+        category: "自慰",
         image: "6.jpg",
     },
 
