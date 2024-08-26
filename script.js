@@ -1,127 +1,115 @@
-let products = {
-    data: [
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
 
 
-    {
-        productName: "M0006",
-        category: "自拍",
-        image: "1.jpg",
-    },
-
-    {
-        productName: "M0005",
-        category: "自慰",
-        image: "2.jpg",
-    },
-
-    {
-        productName: "M0004",
-        category: "口交",
-        image: "3.jpg",
-    },
-
-    {
-        productName: "M0003",
-        category: "口交",
-        image: "4.jpg",
-    },
-
-    {
-        productName: "M0002",
-        category: "口交",
-        image: "5.jpg",
-    },
-
-    {
-        productName: "M0001",
-        category: "自慰",
-        image: "6.jpg",
-    },
+	<style>
+		#outer {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}
+	</style>
 
 
-    {
-        productName: "一次购买 3 送 2 ( 自选 )",
-        category: "优惠 & 活动",
-        image: "Promotion.jpg",
-    },
+</head>
+<body>
 
-    {
-        productName: "一次购买 5 送 3 ( 自选 )",
-        category: "优惠 & 活动",
-        image: "Promotion.jpg",
-    },
 
-    {
-        productName: "一次购买 10 送 5 ( 自选 )",
-        category: "优惠 & 活动",
-        image: "Promotion.jpg",
-    },
+	<div id="outer">
+		<div id="inner"></div>
+
+		<div class="header-container">
+
+
+			<div class="header-logo-cover">
+				<div class="header-text-name">MVP69.MEGA-MENU.XYZ</div>
+			</div>
+
+			<div class="header-bot-cover">
+
+				<div class="header-text-left">
+					<div class="cs-text2">下单咨询👉</div>
+				</div>
+
+				<div class="per-button-cover-header">
+					<a href="https://t.me/sweett520">
+						<div class="per-cs-container">
+							<img src="Banner\Social\Telegram.png" class="cs-img-logo">
+							<div class="cs-text">客服</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="per-button-cover-header">
+					<a href="https://mvp69.wasap.my">
+						<div class="per-cs-container">
+							<img src="Banner\Social\Whatsapp.png" class="cs-img-logo">
+							<div class="cs-text">客服</div>
+						</div>
+					</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
 
 
 
-    ],
-};
+
+	<div id="outer">
+		<div id="inner"></div>
+
+		<div class="wrapper-product">
+
+		<div class="product-button-menu">
+			<button class="button-pro-menu" onclick="filterProduct('全部')">全部</button>
+			<button class="button-pro-menu" onclick="filterProduct('自拍')">自拍</button>
+			<button class="button-pro-menu" onclick="filterProduct('自摸')">自摸</button>
+			<button class="button-pro-menu" onclick="filterProduct('自慰')">自慰</button>
+			<button class="button-pro-menu" onclick="filterProduct('口交')">口交</button>
+			<button class="button-pro-menu" onclick="filterProduct('做爱')">做爱</button>
+			<button class="button-pro-menu" onclick="filterProduct('偷拍')">偷拍</button>
+			<button class="button-pro-menu" onclick="filterProduct('同性')">同性</button>
+			<button class="button-pro-menu" onclick="filterProduct('姐弟')">姐弟</button>
+			<button class="button-pro-menu" onclick="filterProduct('校服')">校服</button>
+			<button class="button-pro-menu" onclick="filterProduct('网红')">网红</button>
+			<button class="button-pro-menu" onclick="filterProduct('极品')">极品</button>
+			<button class="button-pro-menu" onclick="filterProduct('幼女')">幼女</button>
+			<button class="button-pro-menu" onclick="filterProduct('泰国妹')">泰国妹</button>
+			<button class="button-pro-menu" onclick="filterProduct('马来妹')">马来妹</button>
+			<button class="button-pro-menu" onclick="filterProduct('中国妹')">中国妹</button>
+			<button class="button-pro-menu" onclick="filterProduct('韩国妹')">韩国妹</button>
+			<button class="button-pro-menu" onclick="filterProduct('台湾妹')">台湾妹</button>
+			<button class="button-pro-menu" onclick="filterProduct('外国妹')">外国妹</button>
+			<button class="button-pro-menu" onclick="filterProduct('活动')">活动</button>
+		</div>
+
+		<div id="products" class="product"></div>
+
+		</div>
+
+	</div>
 
 
-for(let i of products.data) {
-    //Creare Card
-    let card = document.createElement("div");
-    //Card should have category
-    card.classList.add("card",i.category,"hide");
+	<div id="outer">
+		<div id="inner"></div>
 
-    //image div
-    let imgContainer = document.createElement("div");
-    imgContainer.classList.add("image-container");
+		<div class="copyright-text">Copyright © 2024 MVP69.MEGA-MENU.XYZ All Rights Reserved.</div>
+
+	</div>
 
 
-    //img tag
-    let image = document.createElement("img");
-    image.setAttribute("src", i.image);
-    imgContainer.appendChild(image);
-    card.appendChild(imgContainer);
+	<script src="script.js"></script>
 
-    //container
-    let container = document.createElement("div");
-    container.classList.add("container");
-
-    //product name
-    let name = document.createElement("h5");
-    name.classList.add("product-name");
-    name.innerText = i.productName.toUpperCase();
-    container.appendChild(name);
-
-    card.appendChild(container);
-    document.getElementById("products").appendChild(card);
-}
-
-
-function filterProduct(value){
-    let buttons = document.querySelectorAll(".button-pro-menu");
-    buttons.forEach((button) => {
-        if(value.toUpperCase() == button.innerText.toUpperCase()) {
-            button.classList.add("active");
-        } else {
-            button.classList.remove("active");
-        }
-    });
-
-    let elements = document.querySelectorAll(".card");
-    elements.forEach((element) => {
-        if(value == "全部"){
-            element.classList.remove("hide");
-        }
-        else{
-            if(element.classList.contains(value)){
-                element.classList.remove("hide");
-            }
-            else{
-                element.classList.add("hide");
-            }
-        }
-    });
-}
-
-
-window.onload = () => {
-    filterProduct("全部");
-};
+</body>
+</html>
