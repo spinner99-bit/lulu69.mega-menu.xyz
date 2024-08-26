@@ -1,6 +1,7 @@
 let products = {
     data: [
 
+
     {
         productName: "M0006",
         category: "自拍",
@@ -35,6 +36,25 @@ let products = {
         productName: "M0001",
         category: "自慰",
         image: "6.jpg",
+    },
+
+
+    {
+        productName: "一次购买 3 送 2 ( 自选 )",
+        category: "优惠",
+        image: "Promotion.jpg",
+    },
+
+    {
+        productName: "一次购买 5 送 3 ( 自选 )",
+        category: "优惠",
+        image: "Promotion.jpg",
+    },
+
+    {
+        productName: "一次购买 10 送 5 ( 自选 )",
+        category: "优惠",
+        image: "Promotion.jpg",
     },
 
 
