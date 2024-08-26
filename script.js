@@ -41,19 +41,19 @@ let products = {
 
     {
         productName: "一次购买 3 送 2 ( 自选 )",
-        category: "优惠",
+        category: "优惠 & 活动",
         image: "Promotion.jpg",
     },
 
     {
         productName: "一次购买 5 送 3 ( 自选 )",
-        category: "优惠",
+        category: "优惠 & 活动",
         image: "Promotion.jpg",
     },
 
     {
         productName: "一次购买 10 送 5 ( 自选 )",
-        category: "优惠",
+        category: "优惠 & 活动",
         image: "Promotion.jpg",
     },
 
