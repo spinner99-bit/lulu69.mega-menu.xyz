@@ -53,7 +53,7 @@ let products = {
 
     {
         productName: "一次购买 10 送 5 ( 自选 )",
-        category: "动",
+        category: "活动",
         image: "Promotion.jpg",
     },
 
