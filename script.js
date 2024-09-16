@@ -712,7 +712,7 @@ let products = {
 
 
     {
-        productName: "一次购买 3 送 2 ( 自选 )",
+        productName: "添加联系人可免费获得一个资源",
         category: "活动",
         image: "Product/Promotion.jpg",
     },
@@ -729,6 +729,11 @@ let products = {
         image: "Product/Promotion.jpg",
     },
 
+    {
+        productName: "一次购买 10 送 5 ( 自选 )",
+        category: "活动",
+        image: "Product/Promotion.jpg",
+    },
 
 
     ],
