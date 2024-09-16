@@ -5,6 +5,7 @@
 	justify-content: center;
   	font-family: "Nerko One", cursive;
   	font-weight: bold;
+  	text-decoration: none;
 }
 
 body{
@@ -26,35 +27,13 @@ body{
 
 .header-bot-cover{
 	display: flex;
-}
-
-.per-button-cover-header{
-	background-color: white;
-	margin-left: 10px;
-	align-items: center;
-	border-radius: 10px;
-	border: 2px solid red;
-	width: 100px;
-}
-
-.per-button-cover-header a{
-	text-decoration: none;
-}
-
-.per-cs-container{
-	display: flex;
 	align-items: center;
 }
 
-.cs-img-logo{
-	width: 30px;
-	margin-right: 3px;
-}
-
-.header-cs1-cover{
-	display: flex;
-	align-items: center;
-	background-color: red;
+.header-bot-cover i{
+	color: white;
+	font-size: 24px;
+	margin: 0 3px;
 }
 
 .cs-text2{
@@ -62,9 +41,19 @@ body{
 	font-size: 18px;
 }
 
-.cs-text{
-	color: black;
-	font-size: 18px;
+.header-text-left{
+	display: flex;
+	align-items: center;
+}
+
+.contac-info-icon i{
+	align-items: center;
+	font-weight: 400;
+	transition: all .42s ease;
+}
+
+.contac-info-icon i:hover{
+	transform: scale(1.1);
 }
 
 .run-stop{
@@ -85,7 +74,7 @@ body{
 }
 
 .wrapper-product{
-	margin-top: 150px;
+	margin-top: 115px;
 }
 
 .button-pro-menu{
@@ -96,11 +85,13 @@ body{
 	cursor: pointer;
 	border-radius: 10px;
 	border: 2px solid black;
+	transition: all .42s ease;
 }
 
 .button-pro-menu:hover{
 	background-color: red;
 	color: white;
+	transform: scale(1.1);
 }
 
 .active{
@@ -120,7 +111,6 @@ body{
 	max-width: 300px;
 	margin-top: 15px;
 	padding: 2px;
-	overflow: hidden;
 	border-radius: 10px;
 	font-size: 20px;
 	color: white;
