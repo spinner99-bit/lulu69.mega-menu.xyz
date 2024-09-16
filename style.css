@@ -12,6 +12,7 @@ body{
 }
 
 .header-container{
+	position: fixed;
 	align-items: center;
 	background-color: red;
 	width: 100%;
@@ -25,7 +26,6 @@ body{
 
 .header-bot-cover{
 	display: flex;
-	margin-bottom: 10px;
 }
 
 .per-button-cover-header{
@@ -67,6 +67,27 @@ body{
 	font-size: 18px;
 }
 
+.run-stop{
+	display: flex;
+	margin-left: 10px;
+	margin-right: 10px;
+	align-items: center;
+}
+
+.run-stop i{
+	color: white;
+	font-size: 16px;
+}
+
+.run-stop h1{
+	font-size: 16px;
+	color: white;
+}
+
+.wrapper-product{
+	margin-top: 150px;
+}
+
 .button-pro-menu{
 	margin-top: 10px;
 	background-color: white;
@@ -89,7 +110,7 @@ body{
 
 #products{
 	display: grid;
-	grid-template-columns: auto auto auto auto;
+	grid-template-columns: auto auto auto;
 	grid-column-gap: 10px;
 	padding: 10px;
 }
