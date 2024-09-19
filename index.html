@@ -1,119 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="shortcut icon" href="Banner\icon.png">
-
-	<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>撸撸69</title>
-
-	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
-	<style>
-		#outer {
-			display: flex;
-			justify-content: center;
-			text-align: center;
-		}
-	</style>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>撸撸69</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Banner\icon.png">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
+    <!-- 页眉 -->
+    <header>
+        <div class="store-name">LULU69.MEGA-MENU.XYZ</div>
+        <div class="top-center-header">
+            <button class="per-cs-div">
+                <a href="https://lulu69.wasap.my">
+                    <i class='bx bxl-whatsapp'></i>
+                    <p>Whatsapp</p>
+                </a>
+            </button>
+            <button class="per-cs-div">
+                <a href="https://t.me/sweett520">
+                    <i class='bx bxl-telegram'></i>
+                    <p>Telegram</p>
+                </a>
+            </button>
+        </div>
+        <div class="cart-icon" id="cartIcon">
+            <i class='bx bx-cart'></i>
+            <span id="cartCount">0</span>
+        </div>
+    </header>
 
+    <!-- 分类选择 -->
+    <div class="category-filter">
+        <label for="category">产品分类:</label>
+        <select id="category">
+            <option value="all">所有产品</option>
+        </select>
+    </div>
 
-	<div id="outer">
-		<div id="inner"></div>
+    <!-- 产品列表 -->
+    <div id="productList" class="product-list">
+        <!-- 产品通过 JS 动态加载 -->
+    </div>
 
-		<div class="header-container">
+    <!-- 购物车列表（默认隐藏） -->
+    <div id="cartList" class="cart-list hidden">
+        <h2>购物车</h2>
+        <button id="clearCart">清空购物车</button>
+        <button id="closeCart">关闭购物车</button>
+        <button id="sendCart">发送订单</button>
+        <div id="cartItems"></div>
+    </div>
 
-
-			<div class="header-logo-cover">
-				<a href="index.html" class="header-text-name">LULU69.MEGA-MENU.XYZ</a>
-			</div>
-
-			<div class="header-bot-cover">
-
-				<div class="header-text-left">
-					<div class="cs-text2">下单咨询客服</div>
-					<i class='bx bxs-right-arrow-circle'></i>
-				</div>
-
-				<div class="contac-info-icon">
-					<a href="https://t.me/sweett520">
-						<i class='bx bxl-telegram'></i>
-					</a>
-
-					<a href="https://lulu69.wasap.my">
-						<i class='bx bxl-whatsapp'></i>
-					</a>
-				</div>
-
-			</div>
-
-				<div class="run-stop">
-					<i class='bx bxs-volume-full'></i>
-						<marquee scrollamount="5" direction="left">
-							<h1>大量 MEGA 资源让你选，价格包你满意，固定时间更新大量 MEGA 资源，不定时免费送资源，请记住我们 ( LULU69.MEGA-MENU.XYZ )</h1>
-						</marquee>
-				</div>
-
-		</div>
-
-	</div>
-
-
-
-
-	<div id="outer">
-		<div id="inner"></div>
-
-		<div class="wrapper-product">
-
-		<div class="product-button-menu">
-			<button class="button-pro-menu" onclick="filterProduct('全部')">全部</button>
-			<button class="button-pro-menu" onclick="filterProduct('自拍')">自拍</button>
-			<button class="button-pro-menu" onclick="filterProduct('自慰')">自慰</button>
-			<button class="button-pro-menu" onclick="filterProduct('口交')">口交</button>
-			<button class="button-pro-menu" onclick="filterProduct('做爱')">做爱</button>
-			<button class="button-pro-menu" onclick="filterProduct('偷拍')">偷拍</button>
-			<button class="button-pro-menu" onclick="filterProduct('同性')">同性</button>
-			<button class="button-pro-menu" onclick="filterProduct('姐弟')">姐弟</button>
-			<button class="button-pro-menu" onclick="filterProduct('校服')">校服</button>
-			<button class="button-pro-menu" onclick="filterProduct('网红')">网红</button>
-			<button class="button-pro-menu" onclick="filterProduct('极品')">极品</button>
-			<button class="button-pro-menu" onclick="filterProduct('幼女')">幼女</button>
-			<button class="button-pro-menu" onclick="filterProduct('老师')">老师</button>
-			<button class="button-pro-menu" onclick="filterProduct('泰国妹')">泰国妹</button>
-			<button class="button-pro-menu" onclick="filterProduct('马来妹')">马来妹</button>
-			<button class="button-pro-menu" onclick="filterProduct('中国妹')">中国妹</button>
-			<button class="button-pro-menu" onclick="filterProduct('韩国妹')">韩国妹</button>
-			<button class="button-pro-menu" onclick="filterProduct('台湾妹')">台湾妹</button>
-			<button class="button-pro-menu" onclick="filterProduct('新加坡妹')">新加坡妹</button>
-			<button class="button-pro-menu" onclick="filterProduct('越南妹')">越南妹</button>
-			<button class="button-pro-menu" onclick="filterProduct('外国妹')">外国妹</button>
-			<button class="button-pro-menu" onclick="filterProduct('活动')">活动</button>
-		</div>
-
-		<div id="products" class="product"></div>
-
-		</div>
-
-	</div>
-
-
-	<div id="outer">
-		<div id="inner"></div>
-
-		<div class="copyright-text">Copyright © 2024 MVP69.MEGA-MENU.XYZ All Rights Reserved.</div>
-
-	</div>
-
-
-	<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
