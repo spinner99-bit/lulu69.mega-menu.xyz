@@ -1,5 +1,6 @@
 // 产品数据（模拟从 JSON 文件获取）
 const products = [
+
     { id: 1159, name: "MISS1216", category: "自慰", price: 2.5, img: "Product2/MISS1216.jpg" },
     { id: 1158, name: "MISS1215", category: "做爱", price: 2.5, img: "Product2/MISS1215.jpg" },
     { id: 1157, name: "MISS1213", category: "自慰", price: 2.5, img: "Product2/MISS1213.jpg" },
@@ -704,6 +705,7 @@ const products = [
     { id: 3, name: "MISS0003", category: "姐弟", price: 2.5, img: "Product/MISS0003.jpg" },
     { id: 2, name: "MISS0002", category: "校服", price: 2.5, img: "Product/MISS0002.jpg" },
     { id: 1, name: "MISS0001", category: "校服", price: 2.5, img: "Product/MISS0001.jpg" },
+
 ];
 
 // 购物车初始化
@@ -829,7 +831,7 @@ document.getElementById("sendCart").addEventListener("click", function() {
     // 发送购物车内容至电报
     sendToTelegram(message);
     
-    alert(`购物车内容已发送！交易编号: ${transactionId}。请复制该编号并联系客服完成订单。`);
+    alert(`购物车内容已发送！交易编号: ${transactionId}。请复制该编号并联系客服获取资源链接。`);
     
     // 清空购物车
     cart = [];
