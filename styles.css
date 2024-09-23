@@ -69,10 +69,38 @@ header {
     align-content: center;
 }
 
+.run-stop{
+    height: 20px;
+    background-color: white;
+}
+
+.run-stop h1{
+    font-size: 14px;
+    color: black;
+}
+
+.my-promo{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 10px 0;
+    display: flex;
+}
+
+.my-promo h1{
+    color: white;
+    font-size: 14px;
+}
+
+.my-promo h2{
+    color: yellow;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
 /* 分类选择 */
 .category-filter {
-    padding: 20px;
-    background-color: #212121;
+    margin-bottom: 20px;
     text-align: center;
 }
 
