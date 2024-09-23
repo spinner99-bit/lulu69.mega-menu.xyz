@@ -837,3 +837,29 @@ document.addEventListener('DOMContentLoaded', () => {
     loadProducts();
     updateCartCount();
 });
+
+document.getElementById("buttonA").addEventListener("click", function() {
+    document.getElementById("modalA").style.display = "block";
+});
+
+document.getElementById("buttonB").addEventListener("click", function() {
+    document.getElementById("modalB").style.display = "block";
+});
+
+document.getElementById("closeA").addEventListener("click", function() {
+    document.getElementById("modalA").style.display = "none";
+});
+
+document.getElementById("closeB").addEventListener("click", function() {
+    document.getElementById("modalB").style.display = "none";
+});
+
+// 点击窗口外部也关闭弹窗
+window.onclick = function(event) {
+    if (event.target == document.getElementById("modalA")) {
+        document.getElementById("modalA").style.display = "none";
+    }
+    if (event.target == document.getElementById("modalB")) {
+        document.getElementById("modalB").style.display = "none";
+    }
+}
