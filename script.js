@@ -718,16 +718,24 @@ window.onload = function() {
     updateCartCount();
 };
 
-// 加载分类
+// 动态加载分类，并显示每个分类的产品数量
 function loadCategories() {
-    const categories = [...new Set(products.map(product => product.category))];
     const categorySelect = document.getElementById("category");
-    categories.forEach(category => {
+    const categoryCounts = { all: products.length };  // 初始化 'all' 类别的数量
+
+    // 计算每个分类下的产品数量
+    products.forEach(product => {
+        categoryCounts[product.category] = (categoryCounts[product.category] || 0) + 1;
+    });
+
+    // 生成分类选项
+    for (const category in categoryCounts) {
         const option = document.createElement("option");
         option.value = category;
-        option.textContent = category;
+        option.textContent = `${category === 'all' ? '所有产品' : category} (${categoryCounts[category]})`;
         categorySelect.appendChild(option);
-    });
+    }
+
     categorySelect.addEventListener("change", function() {
         loadProducts(this.value);
     });
