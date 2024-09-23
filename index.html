@@ -13,17 +13,13 @@
     <header>
         <div class="store-name">撸撸69</div>
         <div class="top-center-header">
-            <button class="per-cs-div">
-                <a href="https://lulu69.wasap.my">
-                    <i class='bx bxl-whatsapp'></i>
-                    <p>Whatsapp</p>
-                </a>
+            <button id="buttonA" class="btn-top-icon">
+                <i class='bx bxs-user-circle'></i>
+                <a>客服</a>
             </button>
-            <button class="per-cs-div">
-                <a href="https://t.me/sweett520">
-                    <i class='bx bxl-telegram'></i>
-                    <p>Telegram</p>
-                </a>
+            <button id="buttonB" class="btn-top-icon">
+                <i class='bx bxs-badge-dollar'></i>
+                <a>优惠</a>
             </button>
         </div>
         <div class="cart-icon" id="cartIcon">
@@ -38,10 +34,50 @@
         </marquee>
 	</div>
 
-    <div class="my-promo">
-        <h1>限时优惠 :</h1>
-        <h2>买 3 送 2 | 买 5 送 3 | 买 10 送 5</h2>
-        <h1>( 只限一次性购买 )</h1>
+    <div id="modalA" class="modal">
+        <div class="modal-content">
+
+                <div class="top-pop-conta">
+                    <h2>撸撸69 客服联系方式</h2>
+                    <span class="close" id="closeA">&times;</span>
+                </div>
+
+            <div class="cover-contac">
+                <div class="pop-telegram per-contac">
+                        <a href="https://t.me/sweett520">
+                            <i class='bx bxl-telegram'></i>
+                            <p>Telegram</p>
+                        </a>
+                </div>
+
+                <div class="pop-whatsapp per-contac">
+                    <a href="https://lulu69.wasap.my">
+                        <i class='bx bxl-whatsapp'></i>
+                        <p>Whatsapp</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="modalB" class="modal">
+        <div class="modal-content">
+            <div class="top-pop-conta">
+                <h2>撸撸69 优惠活动</h2>
+                <span class="close" id="closeB">&times;</span>
+            </div>
+            <div class="content-pop">
+                <div class="per-promo-cover">
+                    <h3>活动 1</h3>
+                    <h4>买 3 送 2 | 买 5 送 3 | 买 10 送 5 ( 只限一次性购买 & 不限次数 & 自选资源 )</h3>
+                </div>
+                <div class="per-promo-cover">
+                    <h3>活动 2</h3>
+                    <h4>邀请好友到 撸撸69 并成功购买资源即可免费获得 2 个自选资源</h3>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- 分类选择 -->
