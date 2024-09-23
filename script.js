@@ -817,45 +817,15 @@ document.getElementById("closeCart").addEventListener("click", function() {
     document.getElementById("cartList").classList.remove("visible");
 });
 
-// 发送购物车内容到电报
-document.getElementById("sendCart").addEventListener("click", function() {
-    if (cart.length === 0) {
-        alert("购物车为空，无法发送！");
-        return;
-    }
+// 发送购物车产品到电报
+function sendCartToTelegram() {
+    const productNames = cart.map(item => item.name).join(', ');
+    const telegramUrl = `https://t.me/sweett520?text=${encodeURIComponent(productNames)}`;
+    window.open(telegramUrl, '_blank');
+}
 
-    const cartDetails = cart.map(item => `${item.name} - RM ${item.price}`).join("\n");
-    const transactionId = Math.floor(Math.random() * 1000000);
-    const message = `NEW ORDER INCOMING\n\n${cartDetails}\n\nTransaction ID : ${transactionId}`;
-    
-    // 发送购物车内容至电报
-    sendToTelegram(message);
-    
-    alert(`购物车内容已发送！交易编号: ${transactionId}。请复制该编号并联系客服获取资源链接。`);
-    
-    // 清空购物车
-    cart = [];
-    localStorage.setItem('cart', JSON.stringify(cart));
-    loadCartItems();
+// 初始化
+document.addEventListener('DOMContentLoaded', () => {
+    loadProducts();
     updateCartCount();
 });
-
-// 发送电报消息的函数
-function sendToTelegram(message) {
-    const telegramBotId = "6414565524:AAGY2obKsjvpfyH8rnq4t9OWMPDgKHM8ddI";
-    const chatId = "-4552302294";
-    const url = `https://api.telegram.org/bot${telegramBotId}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
-
-    fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            if (data.ok) {
-                console.log("消息已发送至电报");
-            } else {
-                console.error("电报消息发送失败:", data);
-            }
-        })
-        .catch(error => {
-            console.error("请求失败:", error);
-        });
-}
