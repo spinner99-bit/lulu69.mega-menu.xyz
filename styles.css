@@ -44,6 +44,24 @@ header {
     color: white;
 }
 
+.btn-top-icon{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.btn-top-icon i{
+    color: black;
+    font-size: 25px;
+}
+
+.btn-top-icon a{
+    color: black;
+    font-size: 18px;
+}
+
 .cart-icon {
     cursor: pointer;
     font-size: 24px;
@@ -100,7 +118,7 @@ header {
 
 /* 分类选择 */
 .category-filter {
-    margin-bottom: 10px;
+    margin: 10px 0;
     text-align: center;
 }
 
@@ -221,3 +239,79 @@ button:hover {
 .cart-list::-webkit-scrollbar{
     width: 0;
 }
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-content {
+    background-color: red;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 350px; 
+    text-align: center;
+}
+
+.top-pop-conta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-content h2{
+    color: white;
+    font-size: 28px;
+    height: 37.5px;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    height: 37.5px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cover-contac{
+    display: flex;
+    justify-content: center;
+}
+
+.cover-contac p{
+    color: white;
+}
+
+.per-contac i{
+    color: white;
+    font-size: 50px;
+}
+
+.pop-telegram{
+    margin-right: 20px;
+}
+
+.per-promo-cover{
+    background-color: white;
+    color: black;
+    margin: 10px 0;
+    padding: 5px;
+}
+
